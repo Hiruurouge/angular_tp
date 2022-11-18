@@ -1,0 +1,10 @@
+{
+    "mentions":{
+        "titre":"je suis un titre",
+        "contenu":"je suis un contenu"
+    },
+    "profil":{
+        "titre":"je suis un profil",
+        "contenu":"je suis un contenu"
+    }
+}

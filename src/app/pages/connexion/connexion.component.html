@@ -1,0 +1,14 @@
+<section>
+    <h2>Se Connecter</h2>
+    <h3>Vous devez être connecter pour gérer les vol</h3>
+    <form  #f="ngForm">
+        <label>Identifiant</label>
+        <input name="id" [(ngModel)]="id.id" #ctrlId="ngModel" required placeholder="Saisissez votre id !">
+        <span *ngIf='ctrlId.invalid'>Entre un truc</span>
+        <label>Mot de passe</label>
+        <input type="password" name="passe" #ctrlpass="ngModel" required [(ngModel)]="id.pass">
+        <span *ngIf="ctrlpass.invalid">Entre un truc</span>
+        <input type="submit"(click)="checkid()" value="Connexion" [disabled]="f.invalid">
+        <input type="reset" value="Annuler">
+    </form>
+</section>
